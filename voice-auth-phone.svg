@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 460" fill="none">
+  <rect x="10" y="0" width="220" height="460" rx="30" fill="#0D1B4B"/>
+  <rect x="14" y="4" width="212" height="452" rx="27" fill="#111E50"/>
+  <rect x="18" y="10" width="204" height="440" rx="23" fill="#0A1640"/>
+  <rect x="80" y="10" width="80" height="22" rx="11" fill="#0D1B4B"/>
+  
+  <rect x="18" y="32" width="204" height="42" fill="#0D2060"/>
+  <text x="120" y="50" font-family="Arial" font-size="12" font-weight="800" fill="white" text-anchor="middle">AIATUS AI</text>
+  <text x="120" y="65" font-family="Arial" font-size="8" fill="#7090C0" text-anchor="middle">Voice Authentication</text>
+
+  <!-- Waveform left -->
+  <g transform="translate(18, 150)">
+    <path d="M0 35 Q5 10 10 35 Q15 60 20 35 Q25 10 30 35 Q35 55 40 35 Q45 20 50 35 Q55 50 60 35" stroke="#3A8CEF" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Central mic circle -->
+  <circle cx="120" cy="220" r="55" fill="#1A3C8F" opacity="0.15"/>
+  <circle cx="120" cy="220" r="44" fill="#1A3C8F" opacity="0.25"/>
+  <circle cx="120" cy="220" r="34" fill="#1A3C8F"/>
+  <!-- Mic icon -->
+  <rect x="112" y="204" width="16" height="22" rx="8" fill="white"/>
+  <path d="M106 220 Q106 238 120 238 Q134 238 134 220" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <line x1="120" y1="238" x2="120" y2="248" stroke="white" stroke-width="2.5"/>
+  <line x1="112" y1="248" x2="128" y2="248" stroke="white" stroke-width="2.5"/>
+
+  <!-- Waveform right -->
+  <g transform="translate(142, 150)">
+    <path d="M0 35 Q5 10 10 35 Q15 60 20 35 Q25 10 30 35 Q35 55 40 35 Q45 20 50 35 Q55 50 60 35 Q65 20 70 35 Q75 55 80 35" stroke="#3A8CEF" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Authenticating text -->
+  <text x="120" y="295" font-family="Arial" font-size="10" fill="#8AAAD0" text-anchor="middle">Authenticating...</text>
+
+  <!-- Access Verified badge -->
+  <rect x="55" y="315" width="110" height="36" rx="18" fill="#22C55E" opacity="0.1"/>
+  <circle cx="82" cy="333" r="10" fill="#22C55E"/>
+  <text x="82" y="337" font-family="Arial" font-size="10" fill="white" text-anchor="middle">✓</text>
+  <text x="140" y="337" font-family="Arial" font-size="10" font-weight="700" fill="#22C55E" text-anchor="middle">Access Verified</text>
+
+  <!-- Bottom waveform strip -->
+  <g transform="translate(28, 370)">
+    <rect x="0" y="0" width="184" height="40" rx="8" fill="#162050"/>
+    <path d="M10 20 Q20 5 30 20 Q40 35 50 20 Q60 5 70 20 Q80 35 90 20 Q100 5 110 20 Q120 35 130 20 Q140 5 150 20 Q160 35 170 20" stroke="#22C55E" stroke-width="2" fill="none"/>
+  </g>
+</svg>

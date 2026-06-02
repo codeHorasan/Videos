@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 72" fill="none">
+  <!-- ISO 9001 -->
+  <g transform="translate(0,0)">
+    <circle cx="32" cy="36" r="30" fill="white" stroke="#1A5C2A" stroke-width="2"/>
+    <circle cx="32" cy="36" r="26" fill="none" stroke="#1A5C2A" stroke-width="1"/>
+    <text x="32" y="28" font-family="Arial Black" font-size="9" font-weight="900" fill="#1A5C2A" text-anchor="middle">CERTIFIED</text>
+    <text x="32" y="40" font-family="Arial Black" font-size="11" font-weight="900" fill="#1A5C2A" text-anchor="middle">ISO</text>
+    <text x="32" y="52" font-family="Arial" font-size="7" fill="#1A5C2A" text-anchor="middle">9001:2015</text>
+  </g>
+  <!-- ISO 27001 -->
+  <g transform="translate(70,0)">
+    <circle cx="32" cy="36" r="30" fill="white" stroke="#1A3C8F" stroke-width="2"/>
+    <circle cx="32" cy="36" r="26" fill="none" stroke="#1A3C8F" stroke-width="1"/>
+    <text x="32" y="28" font-family="Arial Black" font-size="9" font-weight="900" fill="#1A3C8F" text-anchor="middle">CERTIFIED</text>
+    <text x="32" y="40" font-family="Arial Black" font-size="11" font-weight="900" fill="#1A3C8F" text-anchor="middle">ISO</text>
+    <text x="32" y="52" font-family="Arial" font-size="7" fill="#1A3C8F" text-anchor="middle">27001</text>
+  </g>
+  <!-- ISO 27701 -->
+  <g transform="translate(140,0)">
+    <circle cx="32" cy="36" r="30" fill="white" stroke="#1A3C8F" stroke-width="2"/>
+    <circle cx="32" cy="36" r="26" fill="none" stroke="#1A3C8F" stroke-width="1"/>
+    <text x="32" y="28" font-family="Arial Black" font-size="9" font-weight="900" fill="#1A3C8F" text-anchor="middle">CERTIFIED</text>
+    <text x="32" y="40" font-family="Arial Black" font-size="11" font-weight="900" fill="#1A3C8F" text-anchor="middle">ISO</text>
+    <text x="32" y="52" font-family="Arial" font-size="7" fill="#1A3C8F" text-anchor="middle">27701</text>
+  </g>
+  <!-- GDPR -->
+  <g transform="translate(210,0)">
+    <circle cx="32" cy="36" r="30" fill="white" stroke="#1A5C2A" stroke-width="2"/>
+    <circle cx="32" cy="36" r="26" fill="none" stroke="#1A5C2A" stroke-width="1"/>
+    <text x="32" y="28" font-family="Arial Black" font-size="9" font-weight="900" fill="#1A5C2A" text-anchor="middle">GDPR</text>
+    <text x="32" y="41" font-family="Arial" font-size="8" fill="#1A5C2A" text-anchor="middle">COMPLIANT</text>
+    <text x="32" y="54" font-family="Arial" font-size="7" fill="#1A5C2A" text-anchor="middle">✓ Verified</text>
+  </g>
+</svg>
