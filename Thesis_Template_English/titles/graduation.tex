@@ -1,0 +1,77 @@
+\makeatletter
+\newcommand*{\germanTitle}[1]{\gdef\@germanTitle{#1}}
+\newcommand*{\firstExaminer}[1]{\gdef\@firstExaminer{#1}}
+\newcommand*{\secondExaminer}[1]{\gdef\@secondExaminer{#1}}
+\newcommand*{\matrikelnr}[1]{\gdef\@matrikelnr{#1}}
+\newcommand*{\registerDate}[1]{\gdef\@registerDate{#1}}
+\newcommand*{\submitDate}[1]{\gdef\@submitDate{#1}}
+\newcommand*{\courseOfStudies}[1]{\gdef\@courseOfStudies{#1}}
+\newcommand*{\authorLastname}[1]{\gdef\@authorLastname{#1}}
+\newcommand*{\authorFirstname}[1]{\gdef\@authorFirstname{#1}}
+
+
+\renewcommand*{\maketitle}{
+	\begin{titlepage}
+	    \centering
+		\newgeometry{left=3.5cm,right=2.5cm,top=8.2cm,bottom=1.0cm}
+			\begingroup
+				\fontsize{22pt}{22pt}\selectfont
+				{\bfseries Bachelor/ Master Thesis}
+			\endgroup
+
+			\vskip 2.2cm
+
+			\begingroup
+			\fontsize{22pt}{22pt}\selectfont
+			{\@germanTitle}
+			\endgroup
+
+			\vskip 3.0cm
+
+
+			\begingroup
+			\fontsize{14pt}{18pt}\selectfont
+				{\@authorFirstname} {\@authorLastname} \\
+				Enrolment Number: {\@matrikelnr} \\
+				Course of Studies: {\@courseOfStudies} \\
+			\endgroup
+			
+			\vskip 1.0cm
+			
+			\begingroup
+			\fontsize{14pt}{18pt}\selectfont
+			    Registration Date: \\
+				{\@registerDate} \\
+				Submission Date: \\
+				{\@submitDate} \\
+			\endgroup
+			
+			\vskip 1.2cm
+			
+			\begingroup
+			\fontsize{12pt}{14pt}\selectfont
+			    Academic Advisors: \\
+			    {\@firstExaminer} \\
+                {\@secondExaminer} \\
+                
+			\endgroup
+			
+			\vskip 1.2cm
+			
+			%\begingroup
+			%    \fontsize{10pt}{13pt}\selectfont\color{tuDortmund}
+			        
+			%        Technische Universität Dortmund
+			        
+			%        Fakultät Statistik
+			        
+  			        %Lehrstuhl Mathematische Statistik und industrielle Anwendung
+			        
+			        %http:\textbackslash\textbackslash https://www.statistik.tu-dortmund.de/msind.html
+            
+			% \endgroup
+
+		\restoregeometry
+	\end{titlepage}
+}
+\makeatother

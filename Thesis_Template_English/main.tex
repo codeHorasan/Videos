@@ -1,0 +1,239 @@
+% Dokumenteinstellungen und Anpassungen
+\input{resources/settings/settings}
+\input{resources/styles/adjustments}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{eso-pic}
+\usepackage[sf]{titlesec}
+\usepackage{acronym}
+\usepackage[normalem]{ulem}
+%\usepackage[ngerman]{babel}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage[toc,page]{appendix}
+
+
+\addto\captionsnenglish{\let\appendixtocname\appendixname%
+\let\appendixpagename\appendixname}
+
+\floatstyle{plaintop}
+\restylefloat{table}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=black,
+    pdftitle={Master thesis NAME},
+    pdfpagemode=FullScreen,
+    citecolor=black,
+}
+
+\interfootnotelinepenalty=10000%verbietet Fußnoten, sich über mehrere Seiten zu verteilen
+
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vskip 2.5cm
+\centering
+\includegraphics[height=1.4cm,%
+keepaspectratio]{resources/images/logo_tudo.png}%
+\hspace{4cm}
+\includegraphics[height=1.4cm,%
+keepaspectratio]{resources/images/Logo_StatistikFK.pdf}
+\vfill
+}}}
+
+\include{titles/graduation}
+% Variablen für das Deckblatt
+\germanTitle{Title}
+\authorFirstname{First Name}
+\authorLastname{Last Name}
+\courseOfStudies{}
+\matrikelnr{123456}
+\registerDate{01.01.2022}
+\submitDate{02.01.2022}
+\firstExaminer{Prof.~Dr.~Markus~Pauly}
+\secondExaminer{Dr. ...}
+
+
+%\include{titles/eidesstatt}
+%\place{Dortmund}
+
+
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+
+% Javascript als Sprache für die lstings
+\lstdefinelanguage{JavaScript}{
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break, that, globals, let, const},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{gray}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+\lstset{
+    language=JavaScript,
+    numbers=none,
+    frame=leftline,
+    tabsize=2,
+    rulesepcolor=\color{gray},
+    rulecolor=\color{black},
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+}
+
+%Paket Symbolverzeichnis
+\usepackage{nomencl}
+\makenomenclature
+\renewcommand{\nomname}{List of symbols}
+\usepackage{ifthen}
+
+% Neuer Befehl um Subsubsubkapitel schreiben zu können
+%\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
+%\setcounter{secnumdepth}{4}
+%\setcounter{tocdepth}{4}
+
+%\usepackage{fontspec}
+%\setmainfont{Arial}
+
+%Einstellungen der Kopfzeile
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}
+%\fancyfoot[C]{}
+%\fancyhead[LO]{\slshape\nouppercase{} \rightmark}
+%\fancyhead[R]{\slshape\nouppercase{} \leftmark}
+%\fancyhead[L]{\thepage}
+%\fancyhead[RO]{\thepage}
+
+%Fancy Header
+\usepackage{fancyhdr}
+    \fancypagestyle{custom}{%
+    \fancyhf{} %Clear header and footer 
+    \fancyhead[L]{\slshape\nouppercase \leftmark} 
+    \fancyhead[R]{\thepage} 
+    %\fancyhead[LO,RE]{\slshape \leftmark} % Innenseite des Headers
+    %\fancyfoot[C]{\thepage}
+    \renewcommand{\headrulewidth}{0.4pt} %Line at the header visible
+    %\renewcommand{\footrulewidth}{0.4pt} %Line at the footer visible
+}
+\pagestyle{custom}
+
+%\titlespacing{\section}{0pt}{12pt}{0pt}
+%\titlespacing{\subsection}{0pt}{12pt}{0pt}
+%\titlespacing{\subsubsection}{0pt}{12pt}{0pt}
+
+\usepackage{rotating}%für Tabellen im Querformat (Anhang)
+\usepackage{booktabs}%für Tabellenlinien
+
+\bibliographystyle{apalike}
+
+\begin{document}
+
+% Entfernen der Seitenzahlen und BackroundPic als Hintergrund nutzen
+\pagenumbering{gobble}
+\AddToShipoutPicture{\BackgroundPic}
+
+% Titelblatt erzeugen
+\maketitle
+\newpage
+\ClearShipoutPicture
+
+%Einstellungen für den Rest des Dokuments
+%\setmainfont{TimesNewRoman}
+%\setsansfont{Arial}
+
+\titleformat*{\section}{\Large\bfseries\sffamily}
+\titleformat*{\subsection}{\bfseries\sffamily}
+\titleformat*{\subsubsection}{\bfseries\sffamily}
+
+\setlength{\parindent}{0.63cm}
+
+% Eidesstattliche Erklärung erzeugen
+%\makeeidesstatt
+%\thispagestyle{empty}
+\pagenumbering{Roman}
+%Inhaltsverzeichnis
+\tableofcontents
+%\addcontentsline{toc}{section}{Inhaltsverzeichnis}
+\newpage
+
+
+%Abkürzungsverzeichnis
+\section*{List of abbreviations}
+\addcontentsline{toc}{section}{List of abbreviations}
+\begin{acronym}[Bash]
+\acro{eg}[e.~g.]{for example}
+\end{acronym}
+
+\newpage
+%Symbolverzeichnis
+%\section*{Symbolverzeichnis}
+\addcontentsline{toc}{section}{List of symbols}
+\nomenclature{$e$}{Euler´s number}
+\printnomenclature
+\newpage
+
+% Kein Einzug am Absatzanfang, dafür Abstand zwischen den Absätzen
+    %\setlength{\parskip}{8pt}
+    %\setlength{\parindent}{0pt}
+    %\onehalfspacing
+%Abbildungsverzeichnis
+\listoffigures
+\addcontentsline{toc}{section}{List of figures}
+\newpage
+
+%Tabellenverzeichnis
+\listoftables
+\addcontentsline{toc}{section}{List of tables}
+\newpage
+
+% Kapitel einfügen
+\pagenumbering{arabic}
+\include{chapter/1_introduction}
+\newpage
+\include{chapter/2_main section}
+\newpage
+\include{chapter/3_conclusion}
+\newpage
+%\pagenumbering{Roman}
+%\setcounter{page}{8}
+\addcontentsline{toc}{section}{References}
+%\bibliographystyle{abbrv}
+\bibliography{literature}
+
+
+%\captionsetup[figure]{list=no}
+%\captionsetup[table]{list=no}
+\include{chapter/X_appendix}
+\newpage
+
+\includepdf[pages={1}]{resources/Eidesstattliche_Versicherung.pdf}
+
+% Bibliografie im .bib Format einfügen
+
+
+\end{document}
